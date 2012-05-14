@@ -5,8 +5,8 @@
 
 int main()
 {
-	int  y, r, d = 0;
-	double w;
+	int  y, r = 0;
+	double w, d;
 	while(!((w>5)&&(w<48)))
 	{
 		srand(time(NULL));
@@ -17,9 +17,7 @@ int main()
 		y = 1 + (int)( 9.0 * rand() / ( RAND_MAX + 1.0 ) );
 	}
 	r = 1 + (int)( 9.0 * rand() / ( RAND_MAX + 1.0 ) );
-	d = 1 + (int) ( 30 * rand() / ( RAND_MAX + 1.0 ) );
-	printf("\nSERIAL: LZ %d %d %d MC\n", (int)w, y, r);
-	printf("\nPURCHASED: m/d/y %.0f/%d/%d\n\n", w/52*12, d, y+2000);
+	d = 1 + (int) ( 30.0 * rand() / ( RAND_MAX + 1.0 ) );
+	printf("\nSERIAL: LZ%d%d%dMC\n", (int)w, y, r);
+	printf("\nPURCHASED: m/d/y %.0f/%d/%d\n\n", w/52*12, (int)d, y+2000);
 }
-
-
