@@ -7,12 +7,12 @@ int main()
 {
 	int  y, r = 0;
 	double w, d;
-	while(!((w>5)&&(w<48)))
+	srand(time(NULL));
+	while(!(w>5))
 	{
-		srand(time(NULL));
-		w = 1 + (int)( 100.0 * rand() / ( RAND_MAX + 1.0 ) );
+		w = 1 + (int)( 48.0 * rand() / ( RAND_MAX + 1.0 ) );
 	}
-	while(!((y>6)&&(y<10)))
+	while(!(y>6))
 	{
 		y = 1 + (int)( 9.0 * rand() / ( RAND_MAX + 1.0 ) );
 	}
